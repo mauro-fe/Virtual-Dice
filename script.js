@@ -18,7 +18,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 btnSortear.classList.add('someBtn');
                 numSorteado[index].classList.remove('aparece');
                 audio.play(); // Reproduzir o áudio
-
                 setTimeout(() => {
                     imgDados.classList.remove('animar');
                     numSorteado[index].classList.remove('some');
