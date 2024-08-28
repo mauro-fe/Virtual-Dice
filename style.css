@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.dado-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.numSorteado {
+    background-color: rgb(61, 51, 204);
+    padding: 6px 12px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 70%;
+    margin-bottom: 8px;
+    margin: 0 200px;
+}
+
+
+.btnSortear {
+    margin-top: 30px;
+    padding: 4px 4px;
+    border-radius: 5px;
+    background-color: rgb(85, 0, 255);
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.imgDado {
+    cursor: no-drop;
+}
+
+.animar {
+    animation: mexer .5s infinite alternate;
+}
+
+.someBtn {
+    display: none;
+}
+
+.apareceBtn {
+    display: block;
+}
+
+.some {
+    opacity: .08;
+}
+
+.aparece {
+    opacity: 1;
+    transition: .5s ease-in-out;
+}
+
+@keyframes mexer {
+    0% {
+        transform: translateY(0);
+        transform: rotate(45deg);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(50%);
+    }
+
+    100% {
+        transform: translateY(-15px);
+        transform: rotate(-45deg);
+        opacity: 1;
+    }
+}
